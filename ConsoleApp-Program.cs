@@ -11,6 +11,7 @@ namespace ConsoleApp16._07._2024
         static void Main(string[] args)
         {
             Console.WriteLine("HelloWorld");
+            
         }
     }
 }
