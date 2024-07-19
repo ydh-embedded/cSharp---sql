@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -39,6 +40,14 @@ namespace WpfApp2.Views
         {
             string query = "SELECT * FROM ZooLocation";
             SqlDataAdapter iSqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
+
+            using (iSqlDataAdapter)
+            {
+                DataTable tZooTable = new DataTable();
+                iSqlDataAdapter.Fill(tZooTable);
+                lListZooLocations.DisplayMemberPath = "Location" ;
+                lListZooLocations.SelectedValuePath = "Id" ;
+            }
         }
 
         private void MainView_Closing(object sender, System.ComponentModel.CancelEventArgs e)
