@@ -12,6 +12,61 @@ namespace DesignPattern
     // Class to represent a journal
     public class Journal
     {
+        // Public enum to represent colors
+        public enum Color
+        {
+            Red,
+            Green,
+            Blue
+        }
+
+        // Public enum to represent sizes
+        public enum Size
+        {
+            Small,
+            Medium,
+            Large,
+            Yuge
+        }
+
+        // Public nested class to represent a product
+        public class Product
+        {
+            // Private field to store the product name
+            private string Name;
+
+            // Private field to store the product color
+            private Color Color;
+
+            // Internal field to store the product size
+            internal Size Size;
+
+            // Public constructor to create a new product
+            public Product(string name, Color color, Size size)
+            {
+                if (name == null)
+                {
+                    throw new ArgumentNullException(paramName: nameof(name));
+                }
+
+                Name = name;
+                Color = color;
+                Size = size;
+            }
+        }
+
+        // Public nested class to filter products
+        public class ProductFilter
+        {
+            // Public static method to filter products by size
+            public static IEnumerable<Product> FilterBySize(IEnumerable<Product> products, Size size)
+            {
+                foreach (var vProduct in products)
+                    if (vProduct.Size == size)
+                        yield return vProduct;
+            }
+        }
+
         // Private field to store journal entries
         private readonly List<string> entries = new List<string>();
 
@@ -60,7 +115,7 @@ namespace DesignPattern
         {
             try
             {
-                if (overwrite ||!File.Exists(filename))
+                if (overwrite || !File.Exists(filename))
                 {
                     File.WriteAllText(filename, j.ToString());
                 }
