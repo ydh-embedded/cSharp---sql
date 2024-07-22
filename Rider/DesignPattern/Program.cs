@@ -65,6 +65,14 @@ namespace DesignPattern
                     if (vProduct.Size == size)
                         yield return vProduct;
             }
+            
+            // Public static method to filter products by Color
+            public static IEnumerable<Product> FilterByColor(IEnumerable<Product> products, Color color)
+            {
+                foreach (var vProduct in products)
+                    if (vProduct.Color == color)
+                        yield return vProduct;
+            }
         }
 
         // Private field to store journal entries
@@ -142,6 +150,23 @@ namespace DesignPattern
             var filename = @"c:\temp\journal.txt";
             p.SaveToFile(j, filename, true);
             Process.Start(filename);
+
+            // We add a new Product 
+            var apple = new Journal.Product("Apple", Journal.Color.Green, Journal.Size.Small);
+            var tree = new Journal.Product("Tree", Journal.Color.Green, Journal.Size.Large);
+            var house = new Journal.Product("House", Journal.Color.Blue, Journal.Size.Large);
+
+            Journal.Product[] products = { apple, tree, house };
+
+            var pf = new Journal.ProductFilter();
+            WriteLine("Green products (old):");
+            foreach (var vProducts in pf.Filter)
+            {
+                
+            }
+
+
+
         }
     }
 }
