@@ -15,6 +15,8 @@ ______________________________________________
 ## Design-Pattern
 
 #Code https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Program.cs
+.
+
 #Link https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-22---SQL-cSahrp.pdf
 
 _______________________________________________
