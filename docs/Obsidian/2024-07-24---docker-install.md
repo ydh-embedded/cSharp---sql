@@ -1,0 +1,140 @@
+
+#Link  
+
+# Docker
+
+![[Pasted image 20240724105455.png]]
+
+_________________
+
+
+
+## Installation
+
+![[Pasted image 20240724104721.png]]
+
+Installing Docker Engine on Arch Linux is a bit more involved than on other distributions, but it's still a relatively straightforward process. Here are the steps:
+
+
+
+### Method 1
+
+- 1. **Update your system**: 
+```bash
+	sudo pacman -Syyu
+```
+
+
+- 2. **Install the `docker` package**: 
+```bash
+	sudo pacman -S docker
+```
+
+
+- 3. **Start the Docker service**: 
+```bash
+	sudo systemctl start docker
+```
+
+- 4. **Enable the Docker service to start at boot**:
+```bash
+	sudo systemctl enable docker
+```
+
+- 5. Method 1 are running ? You've successfully installed Docker Engine on your Arch Linux system
+
+
+To verify that Docker is working correctly, you can run a few commands:
+
+1. **Check the Docker version**: 
+```bash
+	docker --version   // `For excample: Docker version 27.0.3, build 7d4bcd863a`
+```
+
+
+
+2. **Run a test container**:  
+```bash
+	docker run -it ubuntu /bin/bash
+```
+- (this will start a new Ubuntu container and open a bash shell inside it)
+
+
+3. **List running containers**: 
+```bash
+	docker ps
+```
+- (this should show you the test container you just started)
+
+4. **Stop the test container**: 
+```bash
+	docker stop <container_id> // `replace <container_id> with the ID of the test container`
+```
+
+
+
+If everything is working as expected, you should see the Docker version, be able to run a test container, and list/stop the container using the above commands.
+
+Now that you have Docker Engine installed, you can start exploring the world of containerization!
+
+When you're running Arch Linux with kernel version 6.10.0-arch1-2.
+
+When it comes to pulling a Docker image, the `arch` image is not a valid option. The `arch` image is not an official Docker image, and it's not designed to run as a container.
+
+Instead, you can use the following Docker images, which are compatible with Arch Linux:
+
+1. **`ubuntu`**: A popular choice for running a Linux container. You can pull the latest Ubuntu image using `docker pull ubuntu`.
+2. **`debian`**: Another popular Linux distribution that can run as a container. You can pull the latest Debian image using `docker pull debian`.
+3. **`alpine`**: A lightweight Linux distribution that's often used as a base image for other containers. You can pull the latest Alpine image using `docker pull alpine`.
+
+If you want to run a container with a similar environment to your host system (Arch Linux), you can use the `archlinux` image from the Docker Hub. However, please note that this image is not officially supported by Docker, and it might not be up-to-date.
+
+To pull the `archlinux` image, use the following command:
+
+
+```bash
+	docker pull archlinux/archlinux
+```
+
+Keep in mind that this image might not be optimized for running as a container, and you might encounter issues.
+
+Some other useful Docker commands you might want to explore:
+
+- `docker images`: List all available Docker images on your system.
+- `docker ps`: List all running containers.
+- `docker run -it <image_name> /bin/bash`: Run a new container from the specified image and open a bash shell inside it.
+- `docker stop <container_id>`: Stop a running container.
+- `docker rm <container_id>`: Remove a stopped container.
+
+Feel free to ask if you have any more questions or need help with Docker!
+
+
+
+Some next steps you might want to consider:
+#### Pull a Docker-Image: 
+
+```bash
+	docker pull <image-name> // `docker pull ubuntu`
+```
+
+. and
+#### Run a Docker-Image
+
+```bash
+	docker run -it <image_name>  // `docker run -it ubuntu`
+```
+
+#### Create a Dockerfile
+- Create a `Dockerfile` in a new directory and build a custom image using:
+
+```bash
+	 docker build -t <image_name>
+```
+
+#### Explore Docker Compose
+- Install Docker Compose using:
+
+```bash
+	sudo pacman -S docker-compose` and learn how to define and run multi-container applications
+	
+```

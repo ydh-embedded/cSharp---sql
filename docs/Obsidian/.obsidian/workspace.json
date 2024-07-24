@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "54d5724c17ed587f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2024-07-24---docker-install.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-07-22 README.md",
+                "file": "2024-07-24---docker-install.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "byModifiedTime",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-07-22 README.md",
+                "file": "2024-07-24---docker-install.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-07-22 README.md"
+                "file": "2024-07-24---docker-install.md"
               }
             }
           }
@@ -146,8 +159,11 @@
       "daily-notes:Open today's daily note": false
     }
   },
-  "active": "dd9e7f6ec2ec7ed6",
+  "active": "54d5724c17ed587f",
   "lastOpenFiles": [
+    "Pasted image 20240724105455.png",
+    "Pasted image 20240724104721.png",
+    "2024-07-24---docker-install.md",
     "2024-07-22---SQL-cSahrp.md",
     "2024-07-22 README.md",
     "2024-07-17---cSharp-sql.md",
