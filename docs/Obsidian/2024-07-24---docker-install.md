@@ -147,13 +147,99 @@ Some next steps you might want to consider:
 ```bash
 	docker run -it <image_name>  // `docker run -it ubuntu`
 ```
-
+.
+```bash
+	docker run -it ubuntu /bin/bash
+```
+.
+```bash
+	docker run -it alpine /bin/bash
+```
 #### Create a Dockerfile
 - Create a `Dockerfile` in a new directory and build a custom image using:
 
 ```bash
 	 docker build -t <image_name>
 ```
+.
+```bash
+	docker buils .....
+```
+
+To create a `Dockerfile` and build a custom image, follow these steps:
+
+**Step 1: Create a new directory and navigate into it**
+```bash
+	mkdir my-alpine-image
+	cd my-alpine-image
+```
+.
+
+**Step 2: Create a `Dockerfile` in the new directory**
+```bash
+	touch Dockerfile
+```
+.
+
+**Step 3: Edit the `Dockerfile`**
+- Open the `Dockerfile` in your favorite editor and add the following contents:
+```dockerfile
+	
+# Use an official Alpine Linux image as a base
+FROM alpine:latest
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install any necessary packages
+RUN apk add --no-cache python
+
+# Make port 80 available to the world outside this container
+EXPOSE 80
+
+# Define environment variable
+ENV NAME=John
+
+# Run `command` when the container launches
+CMD ["python", "app.py"]
+```
+.
+Let me explain what each line does:
+
+- `FROM alpine:latest`: We use the latest Alpine Linux image as a base.
+- `WORKDIR /app`: We set the working directory in the container to `/app`.
+- `COPY . /app`: We copy the current directory contents into the container at `/app`.
+- `RUN apk add --no-cache python`: We install Python using the `apk` package manager.
+- `EXPOSE 80`: We make port 80 available to the world outside this container.
+- `ENV NAME=John`: We define an environment variable `NAME` with value `John`.
+- `CMD ["python", "app.py"]`: We set the default command to run when the container launches, which is `python app.py`.
+
+**Step 4: Create a file `app.py` in the same directory**
+
+```bash
+	touch app.py
+```
+
+**Step 5: Edit `app.py`**
+- Open `app.py` in your favorite editor and add some Python code, for example:
+
+```python
+	print("Hello, World!")
+	print("My name is", NAME)
+```
+.
+**Step 6: Build the custom image**
+
+```bash
+	docker run -it my-alpine-image
+```
+.
+This command runs a new container from the `my-alpine-image` image and opens a terminal session inside the container.
+
+That's it! You've created a custom Docker image using a `Dockerfile` and built it from scratch! 
 
 #### Explore Docker Compose
 - Install Docker Compose using:
