@@ -162,3 +162,17 @@ Some next steps you might want to consider:
 	sudo pacman -S docker-compose` and learn how to define and run multi-container applications
 	
 ```
+
+#### Alpine Container
+- usefull commands:
+
+```bash
+	docker run -it alpine /bin/bash
+```
+
+- `docker run`: This is the command to start a new Docker container.
+- `-it`: This flag combination allows you to interact with the container as if you were sitting in front of it. `-i` allocates a pseudo-TTY, and `-t` enables terminal input/output.
+- `alpine`: This is the name of the Docker image you want to use. In this case, it's the official Alpine Linux image.
+- `/bin/bash`: This is the command to run inside the container. In this case, it starts a Bash shell.
+
+When you run this command, Docker will create a new container from the Alpine image, and you'll be dropped into a Bash shell inside the container. From there, you can explore the container's file system, run commands, and more!
