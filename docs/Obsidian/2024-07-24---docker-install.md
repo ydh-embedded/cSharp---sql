@@ -156,24 +156,16 @@ Some next steps you might want to consider:
 	docker run -it alpine /bin/bash
 ```
 #### Create a Dockerfile
-- Create a `Dockerfile` in a new directory and build a custom image using:
+- To create a `Dockerfile` and build a custom image, follow these steps:
 
-```bash
-	 docker build -t <image_name>
-```
-.
-```bash
-	docker buils .....
-```
-
-To create a `Dockerfile` and build a custom image, follow these steps:
-
-**Step 1: Create a new directory and navigate into it**
+**Step 1: Create a new directory
 ```bash
 	mkdir my-alpine-image
+```
+. and navigate into it
+```bash
 	cd my-alpine-image
 ```
-.
 
 **Step 2: Create a `Dockerfile` in the new directory**
 ```bash
@@ -182,7 +174,13 @@ To create a `Dockerfile` and build a custom image, follow these steps:
 .
 
 **Step 3: Edit the `Dockerfile`**
-- Open the `Dockerfile` in your favorite editor and add the following contents:
+- Open the `Dockerfile` in your favorite editor
+```bash
+	nano Dockerfile
+```
+.
+
+- and add the following contents:
 ```dockerfile
 	
 # Use an official Alpine Linux image as a base
@@ -231,7 +229,54 @@ Let me explain what each line does:
 	print("My name is", NAME)
 ```
 .
+
 **Step 6: Build the custom image**
+- Enable Experimental Features:
+
+```bash
+	export DOCKER_CLI_EXPERIMENTAL=enabled
+```
+
+
+**Step 7: login with Docker ID**
+- login in with yout ID or E-Mail adress to push and pull images from Docker Hub
+- if you dont have an docker id -  head over to https://hub.docker.com/ to create one
+- you can log in with your Password or Personal Acces Token ( #PAT )
+- using a limited-scope PAT grants better secruity and is required for organizations using SSO
+- learn more at https://docs.docker.com/docker-id/ or https://app.docker.com/signup/
+- Username: `db`
+- Password: `docker`
+- Method PAT: https://app.docker.com/settings/personal-access-tokens/create
+	- Access token description `PAT`
+	- Access permission `Read,Write,Delete`
+	- Click on -> Generate
+
+
+![[Pasted image 20240724141339.png]]
+.
+
+- to use the access token from your Docker CLI client:
+
+```bash
+	docker login registry-1.docker.io -u dockeratydh
+```
+
+.
+- and copy the access token in to your login 
+
+![[Pasted image 20240724143403.png]].
+- At the password prompt, enter the personal access token.
+
+```bash
+	dckr_pat_      R9IqBU-KvvHPwFCxxxkiM
+``` 
+.
+![[Pasted image 20240724142744.png]]
+.
+![[Pasted image 20240724143614.png]]
+.
+
+**Step 8: Build the custom image**
 
 ```bash
 	docker run -it my-alpine-image
