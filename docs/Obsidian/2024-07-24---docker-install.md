@@ -77,9 +77,12 @@ If everything is working as expected, you should see the Docker version, be able
 
 Now that you have Docker Engine installed, you can start exploring the world of containerization!
 
-When you're running Arch Linux with kernel version 6.10.0-arch1-2.
+#### Arch Linux
+- When you're running Arch Linux with kernel version 6.10.0-arch1-2.
 
-When it comes to pulling a Docker image, the `arch` image is not a valid option. The `arch` image is not an official Docker image, and it's not designed to run as a container.
+
+When it comes to pulling a Docker image, the `arch` image is not a valid option.
+The `arch` image is not an official Docker image, and it's not designed to run as a container.
 
 Instead, you can use the following Docker images, which are compatible with Arch Linux:
 
@@ -100,11 +103,32 @@ Keep in mind that this image might not be optimized for running as a container, 
 
 Some other useful Docker commands you might want to explore:
 
-- `docker images`: List all available Docker images on your system.
-- `docker ps`: List all running containers.
-- `docker run -it <image_name> /bin/bash`: Run a new container from the specified image and open a bash shell inside it.
-- `docker stop <container_id>`: Stop a running container.
-- `docker rm <container_id>`: Remove a stopped container.
+- List all available Docker images on your system:
+```bash
+	docker images
+```
+
+- List all running containers
+```bash
+	docker ps
+```
+
+- Run a new container from the specified image and open a bash shell inside it
+```bash
+	docker run -it <image_name> /bin/bash
+```
+
+- Stop a running container:
+```bash
+	docker stop <container_id>
+```
+
+- Remove a stopped container:
+```bash
+	docker rm <container_id>
+```
+
+
 
 Feel free to ask if you have any more questions or need help with Docker!
 
