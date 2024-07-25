@@ -58,10 +58,10 @@ namespace DesignPattern
         }
 
         // Public nested class to filter products
-        public class ProductFilter
+        public class ProductFilter : IFilter<Journal.Product>
         {
             // Public method to filter products by the Specifications on Interface: ISpecification
-            public IEnumerable<Product> Filter(IEnumerable<Product> products, ISpecification<Product> spec)
+            public IEnumerable<Journal.Product> Filter(IEnumerable<Journal.Product> products, ISpecification<Journal.Product> spec)
             {
                 foreach (var product in products)
                 {
