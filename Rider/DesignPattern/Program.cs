@@ -72,9 +72,15 @@ namespace DesignPattern
                 }
             }
 
-            public IEnumerable<Product> FilterByColor(Product[] products, Color green)
+            public IEnumerable<Product> FilterByColor(Product[] products, Color color)
             {
-                throw new NotImplementedException();
+                foreach (var product in products)
+                {
+                    if (product.Color == color)
+                    {
+                        yield return product;
+                    }
+                }
             }
         }
 
@@ -140,7 +146,7 @@ namespace DesignPattern
     // Class to demonstrate the usage of the Journal and Persistence classes
     public class Demo
     { 
-        static void Main(string[] args)      // Static method to run the demo
+        static void Main(string[] args)
         {
             var j = new Journal();
             j.AddEntry("I cried today");
@@ -148,10 +154,11 @@ namespace DesignPattern
             WriteLine(j);
 
             var p = new Persistence();
-            //var filename = @"c:\temp\journal.txt";
-            var filename = @"c:\Users\Student\Documents\working-directory\cSharp-SQL\cSharp---sql\Rider\DesignPattern";
+            // var filename = @"c:\temp\journal.txt";
+            var filename =
+                @"C:\Users\Student\Documents\working-directory\cSharp-SQL\cSharp---sql\Rider\DesignPattern\DesignPatternJournal.md";
             p.SaveToFile(j, filename, true);
-            Process.Start(filename);
+            Process.Start(new ProcessStartInfo(filename) { UseShellExecute = true });
 
             // We add a new Product 
             var apple = new Journal.Product("Apple", Journal.Color.Green, Journal.Size.Small);
@@ -166,7 +173,6 @@ namespace DesignPattern
             PrintProducts("Large products:", pf.Filter(products, new SizeSpecification(Journal.Size.Large)));
             PrintProducts("Green and large products:", pf.Filter(products, new AndSpecification<Journal.Product>(new ColorSpecification(Journal.Color.Green), new SizeSpecification(Journal.Size.Large))));
             PrintProducts("Green products (old):", pf.FilterByColor(products, Journal.Color.Green).Cast<Journal.Product>());
-            
         }
 
         static void PrintProducts(string title, IEnumerable<Journal.Product> products)
