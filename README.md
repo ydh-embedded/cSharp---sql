@@ -15,6 +15,13 @@ ______________________________________________
 ## Design-Pattern
 
 #Code https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Program.cs
+
+#Interface https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/ISpecification.cs
+#Interface https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/IFilter.cs
+
+#SpeciOfSize https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Specifications/SizeSpecification.cs
+#SpeciOfCandS https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Specifications/ColorAndSizeSpecification.cs
+#SpeciOfColor https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Specifications/ColorSpecification.cs
 .
 
 #Link https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-22---SQL-cSahrp.pdf

@@ -165,6 +165,7 @@ namespace DesignPattern
             PrintProducts("Large products:", pf.Filter(products, new SizeSpecification(Journal.Size.Large)));
             PrintProducts("Green and large products:", pf.Filter(products, new AndSpecification<Journal.Product>(new ColorSpecification(Journal.Color.Green), new SizeSpecification(Journal.Size.Large))));
             PrintProducts("Green products (old):", pf.FilterByColor(products, Journal.Color.Green).Cast<Journal.Product>());
+            
         }
 
         static void PrintProducts(string title, IEnumerable<Journal.Product> products)
