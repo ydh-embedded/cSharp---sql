@@ -148,7 +148,8 @@ namespace DesignPattern
             WriteLine(j);
 
             var p = new Persistence();
-            var filename = @"c:\temp\journal.txt";
+            //var filename = @"c:\temp\journal.txt";
+            var filename = @"c:\Users\Student\Documents\working-directory\cSharp-SQL\cSharp---sql\Rider\DesignPattern";
             p.SaveToFile(j, filename, true);
             Process.Start(filename);
 
