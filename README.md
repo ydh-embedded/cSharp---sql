@@ -14,17 +14,19 @@ ______________________________________________
 
 ## Design-Pattern
 
-#Code https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Program.cs
+#Code of [Program](https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Program.cs)
 
 #Interface of [Specifications](https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/ISpecification.cs) 
-#Interface https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/IFilter.cs
+#Interface of [Filter](https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/IFilter.cs) 
 
-#SpeciOfSize https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Specifications/SizeSpecification.cs
-#SpeciOfCandS https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Specifications/ColorAndSizeSpecification.cs
-#SpeciOfColor https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Specifications/ColorSpecification.cs
+#Specification of [Size](https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Specifications/SizeSpecification.cs)
+
+#Specification of [Color&Size](https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Specifications/ColorAndSizeSpecification.cs) 
+
+#Speci of [Color](https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern/Specifications/ColorSpecification.cs)
 .
 
-#Link https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-22---SQL-cSahrp.pdf
+#PDF of [Docs](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-22---SQL-cSahrp.pdf)
 
 _______________________________________________
 
