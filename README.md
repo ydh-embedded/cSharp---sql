@@ -33,7 +33,10 @@ _______________________________________________
 
 ## Visual-Studio Project Source-File
 
-#File `C:\Users\Student\source\repos\WpfApp2\WpfApp2\Views`
+#Bash
+````bash
+	C:\Users\Student\source\repos\WpfApp2\WpfApp2\Views
+````
 
 
 
@@ -41,10 +44,10 @@ _______________________________________________
 
 ## Docker-Engine installation on EndeavourOS
 
-#Link https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-24---docker-install.pdf
+#PDF of [docker install](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-24---docker-install.pdf)
 .
 
-#File https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-07-24---docker-install.md
+#MD of [docker install](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-07-24---docker-install.md)
 
 
 _______________________________________________
