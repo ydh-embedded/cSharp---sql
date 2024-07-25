@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DesignPattern.Specifications;
 using static System.Console;
 
 namespace DesignPattern
@@ -33,10 +35,10 @@ namespace DesignPattern
         public class Product
         {
             // Private field to store the product name
-            private string Name;
+            internal string Name;
 
             // Private field to store the product color
-            private Color Color;
+            internal Color Color;
 
             // Internal field to store the product size
             internal Size Size;
@@ -58,20 +60,21 @@ namespace DesignPattern
         // Public nested class to filter products
         public class ProductFilter
         {
-            // Public static method to filter products by size
-            public static IEnumerable<Product> FilterBySize(IEnumerable<Product> products, Size size)
+            // Public method to filter products by the Specifications on Interface: ISpecification
+            public IEnumerable<Product> Filter(IEnumerable<Product> products, ISpecification<Product> spec)
             {
-                foreach (var vProduct in products)
-                    if (vProduct.Size == size)
-                        yield return vProduct;
+                foreach (var product in products)
+                {
+                    if (spec.IsSatisfied(product))
+                    {
+                        yield return product;
+                    }
+                }
             }
-            
-            // Public static method to filter products by Color
-            public static IEnumerable<Product> FilterByColor(IEnumerable<Product> products, Color color)
+
+            public IEnumerable<Product> FilterByColor(Product[] products, Color green)
             {
-                foreach (var vProduct in products)
-                    if (vProduct.Color == color)
-                        yield return vProduct;
+                throw new NotImplementedException();
             }
         }
 
@@ -116,9 +119,8 @@ namespace DesignPattern
     }
 
     // Class to handle persistence of the journal
-    public class Persistence
-    {
-        // Public method to save the journal to a file
+    public class Persistence       // Public method to save the journal to a file
+    { 
         public void SaveToFile(Journal j, string filename, bool overwrite = false)
         {
             try
@@ -137,9 +139,8 @@ namespace DesignPattern
 
     // Class to demonstrate the usage of the Journal and Persistence classes
     public class Demo
-    {
-        // Static method to run the demo
-        static void Main(string[] args)
+    { 
+        static void Main(string[] args)      // Static method to run the demo
         {
             var j = new Journal();
             j.AddEntry("I cried today");
@@ -156,17 +157,23 @@ namespace DesignPattern
             var tree = new Journal.Product("Tree", Journal.Color.Green, Journal.Size.Large);
             var house = new Journal.Product("House", Journal.Color.Blue, Journal.Size.Large);
 
-            Journal.Product[] products = { apple, tree, house };
+            var products = new[] { apple, tree, house };
 
             var pf = new Journal.ProductFilter();
-            WriteLine("Green products (old):");
-            foreach (var vProducts in pf.Filter)
+
+            PrintProducts("Green products:", pf.Filter(products, new ColorSpecification(Journal.Color.Green)));
+            PrintProducts("Large products:", pf.Filter(products, new SizeSpecification(Journal.Size.Large)));
+            PrintProducts("Green and large products:", pf.Filter(products, new AndSpecification<Journal.Product>(new ColorSpecification(Journal.Color.Green), new SizeSpecification(Journal.Size.Large))));
+            PrintProducts("Green products (old):", pf.FilterByColor(products, Journal.Color.Green).Cast<Journal.Product>());
+        }
+
+        static void PrintProducts(string title, IEnumerable<Journal.Product> products)
+        {
+            WriteLine(title);
+            foreach (var product in products)
             {
-                
+                WriteLine($" - {product.Name} is {title.ToLower().Replace("products", "")}");
             }
-
-
-
         }
     }
 }
