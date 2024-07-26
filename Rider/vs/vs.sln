@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp3.Views", "WpfApp3.Views\WpfApp3.Views.csproj", "{C5ADDB21-CC71-4D9E-B59C-7A13E3096885}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5ADDB21-CC71-4D9E-B59C-7A13E3096885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5ADDB21-CC71-4D9E-B59C-7A13E3096885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5ADDB21-CC71-4D9E-B59C-7A13E3096885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5ADDB21-CC71-4D9E-B59C-7A13E3096885}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
