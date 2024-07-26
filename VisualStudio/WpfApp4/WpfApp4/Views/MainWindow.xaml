@@ -19,7 +19,7 @@
         <DataTemplate x:Key="SampleTemplate">
             <StackPanel/>
         </DataTemplate>
-        
+
     </Window.Resources>
     <Window.InputBindings>
         <!-- Example of Keyboard shortcuts -->
@@ -29,7 +29,6 @@
         <KeyBinding Command="{Binding NewCmd}" Gesture="Ctrl+N" />
         <KeyBinding Command="{Binding ExitCmd}" Gesture="Alt+F4" />
     </Window.InputBindings>
-
     <DockPanel>
         <!-- File Menu -->
         <Menu DockPanel.Dock="Top" Margin="0,0,0.4,0">
@@ -50,4 +49,5 @@
             <!-- Place here your content -->
         </StackPanel>
     </DockPanel>
+    
 </Window>
