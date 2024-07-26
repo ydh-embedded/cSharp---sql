@@ -11,40 +11,34 @@ using static System.Console;
 
 namespace DesignPattern
 {
-    // Class to represent a journal
-    public class Journal
+    
+    public class Journal                        // Class to represent a journal
     {
-        // Public enum to represent colors
-        public enum Color
+        public enum Color                       // Public enum to represent colors
         {
             Red,
             Green,
             Blue
         }
-
-        // Public enum to represent sizes
-        public enum Size
+        
+        public enum Size                        // Public enum to represent sizes
         {
             Small,
             Medium,
             Large,
             Yuge
         }
-
-        // Public nested class to represent a product
-        public class Product
+        public class Product                     // Public nested class to represent a product
         {
-            // Private field to store the product name
-            internal string Name;
+            
+            internal string Name;               // Private field to store the product name
+            
+            internal Color Color;               // Private field to store the product color
+            
+            internal Size Size;                     // Internal field to store the product size
 
-            // Private field to store the product color
-            internal Color Color;
-
-            // Internal field to store the product size
-            internal Size Size;
-
-            // Public constructor to create a new product
-            public Product(string name, Color color, Size size)
+            
+            public Product(string name, Color color, Size size)     // Public constructor to create a new product
             {
                 if (name == null)
                 {
@@ -57,11 +51,11 @@ namespace DesignPattern
             }
         }
 
-        // Public nested class to filter products
-        public class ProductFilter : IFilter<Journal.Product>
+        
+        public class ProductFilter : IFilter<Journal.Product>   // Public nested class to filter products
         {
-            // Public method to filter products by the Specifications on Interface: ISpecification
-            public IEnumerable<Journal.Product> Filter(IEnumerable<Journal.Product> products, ISpecification<Journal.Product> spec)
+            
+            public IEnumerable<Journal.Product> Filter(IEnumerable<Journal.Product> products, ISpecification<Journal.Product> spec) // Public method to filter products by the Specifications on Interface: ISpecification
             {
                 foreach (var product in products)
                 {
@@ -84,21 +78,21 @@ namespace DesignPattern
             }
         }
 
-        // Private field to store journal entries
-        private readonly List<string> entries = new List<string>();
+        
+        private readonly List<string> entries = new List<string>();            // Private field to store journal entries
 
-        // Private static field to keep track of the entry count
-        private static int count = 0;
+        
+        private static int count = 0;                           // Private static field to keep track of the entry count
 
-        // Public method to add a new entry to the journal
-        public int AddEntry(string text)
+        
+        public int AddEntry(string text)                    // Public method to add a new entry to the journal
         {
             entries.Add($"{++count}:{text}");
             return count; // memento
         }
 
-        // Public method to remove an entry from the journal
-        public void RemoveEntry(int index)
+        
+        public void RemoveEntry(int index)              // Public method to remove an entry from the journal
         {
             if (index >= 0 && index < entries.Count)
             {
@@ -110,22 +104,26 @@ namespace DesignPattern
             }
         }
 
-        // Public override method to return a string representation of the journal
-        public override string ToString()
+        
+        public override string ToString()                    // Public override method
+                                                            // to return a string representation of the journal
         {
             return string.Join(Environment.NewLine, entries);
         }
 
-        // Public method to load journal entries from a URI (not implemented)
-        public void Load(Uri uri)
+        
+        public void Load(Uri uri)                 // Public method to load journal entries from a URI (not implemented)
         {
-            // Implement loading journal entries from the specified URI
-            throw new NotImplementedException();
+            
+            throw new NotImplementedException();         // Implement loading journal entries from the specified URI
         }
     }
 
-    // Class to handle persistence of the journal
-    public class Persistence       // Public method to save the journal to a file
+    
+    public class Persistence                        // Public method to save
+                                                    // the journal to a file
+                                                    // Class to handle persistence of the journal
+    
     { 
         public void SaveToFile(Journal j, string filename, bool overwrite = false)
         {
@@ -143,8 +141,9 @@ namespace DesignPattern
         }
     }
 
-    // Class to demonstrate the usage of the Journal and Persistence classes
-    public class Demo
+    
+    public class Demo                            // Class to demonstrate the usage
+                                                 // of the Journal and Persistence classes
     { 
         static void Main(string[] args)
         {
@@ -154,10 +153,11 @@ namespace DesignPattern
             WriteLine(j);
 
             var p = new Persistence();
-            // var filename = @"c:\temp\journal.txt";
+            
             var filename =
                 @"C:\Users\Student\Documents\working-directory\cSharp-SQL\cSharp---sql\Rider\DesignPattern\DesignPatternJournal.md";
             p.SaveToFile(j, filename, true);
+            
             Process.Start(new ProcessStartInfo(filename) { UseShellExecute = true });
 
             // We add a new Product 
