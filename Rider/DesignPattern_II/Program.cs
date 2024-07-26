@@ -6,9 +6,9 @@ namespace DesignPattern_II
 
     public class Rectangle                                                 // Represents a rectangle with width and height.
     {
-        public int Width { get; set; } // Gets the width of the rectangle.
+        public virtual int Width { get; set; } // Gets the width of the rectangle.
 
-        public int Height { get; set; } // Gets the height of the rectangle.
+        public virtual int Height { get; set; } // Gets the height of the rectangle.
 
         public Rectangle(int width, int height)         // Initializes a new instance of the Rectangle class with the specified width and height.
         {
@@ -32,13 +32,13 @@ namespace DesignPattern_II
             this.side = side;
         }
 
-        public new int Width
+        public override int Width
         {
             get { return base.Width; }
             set { base.Width = base.Height = value; }
         }
 
-        public new int Height
+        public override int Height
         {
             get { return base.Height; }
             set { base.Width = base.Height = value; }
