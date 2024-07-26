@@ -19,7 +19,8 @@ namespace WpfApp3.Views
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["WpfApp3.Views.Properties.Settings"].ConnectionString;
             sqlConnection = new SqlConnection(connectionString);
-            listZoos = (ListBox)this.FindName("listZoos"); // Assuming listZoos is a ListBox in your XAML
+            listZoos = (ListBox)this.FindName("listZoos");          // Assuming listZoos is a ListBox in your XAML
+            ShowZoos();
         }
 
         private void InitializeComponent()
