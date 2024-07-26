@@ -27,18 +27,18 @@ namespace DesignPattern_II
     {
         private int side;
 
-        public Square(int side) : base(side, side)
+        public Square(int side) : base(side, side)          // Set that the width or the heigth the same Value of Side
         {
             this.side = side;
         }
-
-        public override int Width
+        
+        public new int Width
         {
             get { return base.Width; }
             set { base.Width = base.Height = value; }
         }
 
-        public override int Height
+        public new int Height
         {
             get { return base.Height; }
             set { base.Width = base.Height = value; }
