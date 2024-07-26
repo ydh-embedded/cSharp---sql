@@ -34,6 +34,8 @@ ______________________________________________
 
 #Code of [Program](https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern_II/Program.cs)
 
+#PDF of [Main](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-26---cSharp_DesignPattern_II.pdf)
+
 _______________________________________________
 
 
