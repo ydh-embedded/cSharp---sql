@@ -28,6 +28,12 @@ ______________________________________________
 
 #PDF of [Docs](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-22---SQL-cSahrp.pdf)
 
+______________________________________________
+
+## Design-Pattern_II
+
+#Code of [Program](https://github.com/ydh-embedded/cSharp---sql/blob/main/Rider/DesignPattern_II/Program.cs)
+
 _______________________________________________
 
 
