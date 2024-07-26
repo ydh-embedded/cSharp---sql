@@ -50,13 +50,16 @@ namespace DesignPattern_II
 
         private static int Area(Rectangle r) => r.Width * r.Height; // Calculates the area of the specified rectangle.
         
+        
+        
+        
+        
         private static void Main(string[] args)                   // Main entry point of the application.
         {
             var rcRectangle = new Rectangle(2, 3);
             WriteLine($"{rcRectangle} has area {Area(rcRectangle)}");
 
-            var sqSquare = new Square();
-            sqSquare.Width = 4;
-            WriteLine($"{sqSquare} has area {Area(rcRectangle)}");
+            var sqSquare = new Square(4);                    // Create a Square with side length 4
+            WriteLine($"{sqSquare} has area {Area(sqSquare)}");
         }
     }
