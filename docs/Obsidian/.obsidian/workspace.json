@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-07-25---cSharp-Design-Pattern.md",
+                "file": "2024-07-26---cSharp_DesignPattern_II.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-07-25---cSharp-Design-Pattern.md",
+                "file": "2024-07-26---cSharp_DesignPattern_II.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "byModifiedTime",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-07-25---cSharp-Design-Pattern.md",
+                "file": "2024-07-26---cSharp_DesignPattern_II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-07-25---cSharp-Design-Pattern.md"
+                "file": "2024-07-26---cSharp_DesignPattern_II.md"
               }
             }
           }
@@ -161,8 +161,10 @@
   },
   "active": "54d5724c17ed587f",
   "lastOpenFiles": [
-    "2024-07-24---docker-install.md",
+    "Pasted image 20240726111057.png",
     "2024-07-25---cSharp-Design-Pattern.md",
+    "2024-07-26---cSharp_DesignPattern_II.md",
+    "2024-07-24---docker-install.md",
     "Pasted image 20240724143614.png",
     "Pasted image 20240724143403.png",
     "Pasted image 20240724142744.png",
