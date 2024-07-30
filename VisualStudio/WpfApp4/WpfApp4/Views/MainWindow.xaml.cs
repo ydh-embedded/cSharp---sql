@@ -31,12 +31,15 @@ namespace WpfApp3.Views
 
         public void ShowZoos()
         {
-            string query = "select * from Zoo";                                               // Unser Query gibt uns alles aus der Table "Zoo" zurück
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);        // We give this Adapter the Query and the Connection
-
-
-            using (sqlDataAdapter)
+            try
             {
+
+                string query = "select * from Zoo";                                               // Unser Query gibt uns alles aus der Table "Zoo" zurück
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);        // We give this Adapter the Query and the Connection
+
+
+                using (sqlDataAdapter)
+                {
                 DataTable tZooTable = new DataTable();              // we create an Object from Type: DataTable !
                 sqlDataAdapter.Fill(tZooTable);
 
@@ -46,6 +49,10 @@ namespace WpfApp3.Views
                 listZoos.ItemsSource = tZooTable.DefaultView; // Default view is the origin for the new items
 
 
+                }
+            } catch(Exception e)
+            {
+                MessageBox.Show(e.ToString());
             }
 
         }
