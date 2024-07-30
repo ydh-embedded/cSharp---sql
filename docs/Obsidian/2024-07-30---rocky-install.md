@@ -1,3 +1,5 @@
+![[Pasted image 20240730142620.png]]
+
 #link https://rockylinux.org/de
 #Link https://phoenixnap.com/kb/upgrade-rocky-linux-8-to-9
 
@@ -164,58 +166,3 @@ export REPO_URL="https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/Pa
 ```
 .
 - ![[Pasted image 20240730131520.png]]
-
-```bash
-
-```
-.
-
-```bash
-
-```
-.
-
-```bash
-
-```
-.
-
-```bash
-
-```
-.
-
-```bash
-
-```
-.
-
-```bash
-
-```
-.
-
-```bash
-
-```
-.
-
-```bash
-
-```
-.
-
-```bash
-
-```
-.
-
-```bash
-
-```
-.
-
-```bash
-
-```
-.

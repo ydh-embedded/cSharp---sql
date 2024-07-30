@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "2d6c0d905435cf0d",
+        "id": "b83ea406e574fd74",
         "type": "tabs",
         "children": [
           {
-            "id": "dd9e7f6ec2ec7ed6",
+            "id": "e625ef125ad5c45f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-07-22 README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "54d5724c17ed587f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2024-07-22 README.md",
+                "file": "2024-07-30---rocky-install.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-07-22 README.md",
+                "file": "2024-07-30---rocky-install.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "byModifiedTime",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-07-22 README.md",
+                "file": "2024-07-30---rocky-install.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-07-22 README.md"
+                "file": "2024-07-30---rocky-install.md"
               }
             }
           }
@@ -159,8 +146,10 @@
       "daily-notes:Open today's daily note": false
     }
   },
-  "active": "54d5724c17ed587f",
+  "active": "e625ef125ad5c45f",
   "lastOpenFiles": [
+    "Pasted image 20240730142620.png",
+    "2024-07-22 README.md",
     "2024-07-30---rocky-install.md",
     "Pasted image 20240730141406.png",
     "Pasted image 20240730141301.png",
@@ -177,7 +166,6 @@
     "2024-07-26---cSharp_DesignPattern_II.md",
     "2024-07-24---docker-install.md",
     "2024-07-22---SQL-cSahrp.md",
-    "2024-07-22 README.md",
     "2024-07-17---cSharp-sql.md",
     "Welcome.md",
     "create a link.md",
