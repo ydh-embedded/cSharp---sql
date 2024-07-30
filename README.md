@@ -84,7 +84,7 @@ _______________________________________________
 
 #PDF of [Postgres install](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-30---rocky-install.pdf)
 
-#MD of [Postgres install](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-07-30---rocky-install.md)
+#MD of [Postgres install](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-07-30---rocky-postgresql-install.md)
 
 
 _______________________________________________
