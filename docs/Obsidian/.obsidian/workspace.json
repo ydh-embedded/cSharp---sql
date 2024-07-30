@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-07-26---cSharp-DesignPattern_III-Interface.md",
+                "file": "2024-07-30---rocky-install.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-07-26---cSharp-DesignPattern_III-Interface.md",
+                "file": "2024-07-30---rocky-install.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "byModifiedTime",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-07-26---cSharp-DesignPattern_III-Interface.md",
+                "file": "2024-07-30---rocky-install.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-07-26---cSharp-DesignPattern_III-Interface.md"
+                "file": "2024-07-30---rocky-install.md"
               }
             }
           }
@@ -161,8 +161,14 @@
   },
   "active": "54d5724c17ed587f",
   "lastOpenFiles": [
-    "2024-07-25---cSharp-Design-Pattern.md",
+    "Pasted image 20240730125618.png",
+    "Pasted image 20240730125219.png",
+    "Pasted image 20240730125031.png",
+    "Pasted image 20240730125027.png",
+    "Pasted image 20240730124844.png",
     "2024-07-26---cSharp-DesignPattern_III-Interface.md",
+    "2024-07-30---rocky-install.md",
+    "2024-07-25---cSharp-Design-Pattern.md",
     "2024-07-26---cSharp_DesignPattern_II.md",
     "Pasted image 20240726111057.png",
     "2024-07-24---docker-install.md",
@@ -171,8 +177,6 @@
     "Pasted image 20240724142744.png",
     "Pasted image 20240724141822.png",
     "Pasted image 20240724141339.png",
-    "Pasted image 20240724105455.png",
-    "Pasted image 20240724104721.png",
     "2024-07-22---SQL-cSahrp.md",
     "2024-07-22 README.md",
     "2024-07-17---cSharp-sql.md",
