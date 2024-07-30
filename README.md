@@ -70,8 +70,11 @@ _______________________________________________
 _______________________________________________
 
 
-## Datenbank on Rocky-Linux
+## Datenbank on Rocky-Linux 
 
 #PDF of [Rocky install and Upgrade](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-30---rocky-install.pdf)
 
 #MD of [Rocky install and Upgrade](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-07-30---rocky-install.md)
+
+
+_______________________________________________
