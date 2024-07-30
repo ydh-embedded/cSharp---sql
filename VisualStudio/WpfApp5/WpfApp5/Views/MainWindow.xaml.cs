@@ -12,14 +12,14 @@ namespace WpfApp3.Views
     public partial class MainWindow : Window
     {
         private SqlConnection sqlConnection;
-        private ListBox listZoos;
+        private System.Windows.Controls.ListBox listZoos;
 
         public MainWindow()
         {
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["WpfApp3.Views.Properties.Settings"].ConnectionString;
             sqlConnection = new SqlConnection(connectionString);
-            listZoos = (ListBox)this.FindName("listZoos");
+            listZoos = (System.Windows.Controls.ListBox)this.FindName("listZoos");
 
             if (listZoos != null)
             {
