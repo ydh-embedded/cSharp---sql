@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-07-30---rocky-install.md",
+                "file": "2024-07-30---rocky-postgresql-install.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-07-30---rocky-install.md",
+                "file": "2024-07-30---rocky-postgresql-install.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "byModifiedTime",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-07-30---rocky-install.md",
+                "file": "2024-07-30---rocky-postgresql-install.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-07-30---rocky-install.md"
+                "file": "2024-07-30---rocky-postgresql-install.md"
               }
             }
           }
@@ -148,9 +148,11 @@
   },
   "active": "e625ef125ad5c45f",
   "lastOpenFiles": [
+    "Pasted image 20240730150428.png",
+    "2024-07-30---rocky-install.md",
+    "2024-07-30---rocky-postgresql-install.md",
     "Pasted image 20240730142620.png",
     "2024-07-22 README.md",
-    "2024-07-30---rocky-install.md",
     "Pasted image 20240730141406.png",
     "Pasted image 20240730141301.png",
     "Pasted image 20240730141231.png",
@@ -160,7 +162,6 @@
     "Pasted image 20240730135825.png",
     "Pasted image 20240730135605.png",
     "Pasted image 20240730135440.png",
-    "Pasted image 20240730134653.png",
     "2024-07-26---cSharp-DesignPattern_III-Interface.md",
     "2024-07-25---cSharp-Design-Pattern.md",
     "2024-07-26---cSharp_DesignPattern_II.md",

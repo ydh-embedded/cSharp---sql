@@ -70,11 +70,21 @@ _______________________________________________
 _______________________________________________
 
 
-## Datenbank on Rocky-Linux 
+## Rocky-Linux  First Steps
 
 #PDF of [Rocky install and Upgrade](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-30---rocky-install.pdf)
 
 #MD of [Rocky install and Upgrade](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-07-30---rocky-install.md)
+
+
+_______________________________________________
+
+
+## Datenbank on Rocky-Linux 
+
+#PDF of [Postgres install](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-30---rocky-install.pdf)
+
+#MD of [Postgres install](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-07-30---rocky-install.md)
 
 
 _______________________________________________
