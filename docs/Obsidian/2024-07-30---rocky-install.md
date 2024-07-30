@@ -7,19 +7,20 @@ ___________________________
 ### install Rocky
 #### download iso file
 - File from [Origin](https://rockylinux.org/de/download) 
-- ![[Pasted image 20240730132509.png]]
+	- ![[Pasted image 20240730132509.png]]
 - Wir installieren Roxk in der VM (hyperV)
-- ![[Pasted image 20240730133930.png]]
-- ![[Pasted image 20240730133855.png]]
+	- ![[Pasted image 20240730133930.png]]
+	- ![[Pasted image 20240730133855.png]]
 - Wir geben der Machine 2 Kerne und 4096 MB in den Einstellungen der VM
-- ![[Pasted image 20240730134118.png]]
+	- ![[Pasted image 20240730134118.png]]
 - WICHTIG: Wir entfernen das Häkchen [  ]  "sicheren Start aktivieren"
 - 
-- ![[Pasted image 20240730134233.png]]
-- ![[Pasted image 20240730134435.png]]
-- ![[Pasted image 20240730134500.png]]
-- ![[Pasted image 20240730134534.png]]
-- ![[Pasted image 20240730134653.png]]
+	- ![[Pasted image 20240730134233.png]]
+	- 
+	- ![[Pasted image 20240730134435.png]]
+	- ![[Pasted image 20240730134500.png]]
+	- ![[Pasted image 20240730134534.png]]
+	- ![[Pasted image 20240730134653.png]]
 - wir legen Root-Passwort und einen neuen Benutzer an:
 	- bei kurzen Passwörtern muss mann zum übernehmen doppelt auf Fertig klicken
 	- Den Benutzer und Passwort notieren 
@@ -53,7 +54,7 @@ Check the current [OS](https://phoenixnap.com/glossary/operating-system) versi
 	cat /etc/os-release
 ```
 .
-![[Pasted image 20240730125031.png]]
+		![[Pasted image 20240730125031.png]]
 - Hier die Version 8.8
 #### Step 2: Update Package Repository
 
@@ -66,7 +67,7 @@ Run the following command:
 ```
 .
 
-![[Pasted image 20240730125219.png]]
+		![[Pasted image 20240730125219.png]]
 
 #### Step 3: (Optional) Backup the System
 
@@ -95,7 +96,7 @@ In this step, export several packages (**`rocky-release`**, **`rocky-repos`**, 
 
 Check the latest versions on the [official Rocky Linux website](http://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/Packages/r/):
 
-![[Pasted image 20240730125618.png]]
+		![[Pasted image 20240730125618.png]]
 
 
 ##### Add Temp File step by step 
@@ -158,11 +159,11 @@ export REPO_URL="https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/Pa
 	sudo dnf install --skip-broken $REPO_URL/$RELEASE_PKG $REPO_URL/$REPOS_PKG $REPO_URL/$GPG_KEYS_PKG
 ```
 .
-![[Pasted image 20240730124844.png]]
+		![[Pasted image 20240730124844.png]]
 - wir lassen uns die REPO_URL anzeigen:
 
 ```bash
 	echo $REPO_URL 
 ```
 .
-- ![[Pasted image 20240730131520.png]]
+		- ![[Pasted image 20240730131520.png]]
