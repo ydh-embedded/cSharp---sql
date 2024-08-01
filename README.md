@@ -88,3 +88,12 @@ _______________________________________________
 
 
 _______________________________________________
+
+## SQLite Create Table with ID Primary Key 
+
+#PDF of [Postgres install](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-07-30---rocky-postgresql-install.pdf)
+
+#MD of [Postgres install](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-07-30---rocky-postgresql-install.md)
+
+
+_______________________________________________
