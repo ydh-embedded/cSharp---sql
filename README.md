@@ -91,7 +91,7 @@ _______________________________________________
 
 ## SQLite Create Table with ID Primary Key 
 
-#PDF of [Postgres install](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-08-01---SQLite-PrimaryKey.pdf)
+#PDF of [Postgres install](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-08-01---SQLite-PrimaryKey.pdf)
 
 #MD of [Postgres install](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-08-01---SQLite-PrimaryKey.md)
 
@@ -100,7 +100,7 @@ _______________________________________________
 
 ## Rocky-Linux iNodes 
 
-#PDF of [Linux iNodes](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-08-02---iNodes.pdf)
+#PDF of [Linux iNodes](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-08-02---iNodes.pdf)
 
 #MD of [Linux iNodes](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-08-02---iNodes.md)
 
@@ -109,7 +109,7 @@ _______________________________________________
 
 ## Rocky-Linux Bootstick erstellen mit discdump `dd`
 
-#PDF of [Boot-Stick](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-08-02---Rocky-Stick-erstellen.pdf)
+#PDF of [Boot-Stick](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-08-02---Rocky-Stick-erstellen.pdf)
 
 #MD of [Boot-Stick](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-08-02---Rocky-Stick-erstellen.md)
 
@@ -118,7 +118,7 @@ _______________________________________________
 
 ## Rocky-Linux Shell-Expressions
 
-#PDF of [Shell-Expressions](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-08-02---Rocky-Shell-Expression.pdf)
+#PDF of [Shell-Expressions](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-08-02---Rocky-Shell-Expression.pdf)
 
 #MD of [Shell-Expressions](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-08-02---Rocky-Shell-Expression.md)
 
@@ -127,7 +127,8 @@ _______________________________________________
 
 ## Rocky-Linux VIM-Tutorial
 
-#PDF of [VIM](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-08-02---VIM-Tutor.pdf
+#PDF of [VIM](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/PDF/2024-08-02---VIM-Tutor.pdf)
+
 #MD of [VIM](https://github.com/ydh-embedded/cSharp---sql/blob/main/docs/Obsidian/2024-08-02---VIM-Tutor.md)
 
 
