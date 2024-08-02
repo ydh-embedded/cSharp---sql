@@ -160,7 +160,8 @@ export REPO_URL="https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/Pa
 ```
 .
 		![[Pasted image 20240730124844.png]]
-- wir lassen uns die REPO_URL anzeigen:
+
+- wir lassen uns den Wert der Systemvariable anzeigen:
 
 ```bash
 	echo $REPO_URL 
